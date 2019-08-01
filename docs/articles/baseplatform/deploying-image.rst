@@ -26,8 +26,8 @@ You will need two files, both of them will be found on
 
 The compressed image name and bmap file will have these suffixes:
 
-- <image>.rootfs.wic.bz2
-- <image>.rootfs.wic.bmap 
+- <image-name>.wic.bz2 (or <image-name>.wic.gz)
+- <image-name>.wic.bmap 
 
 To flash the image, run:
 
@@ -38,8 +38,7 @@ To flash the image, run:
 .. note:: In case bmap gives the error "[Errno 16] Device or resource
           busy", make sure the disk partitions are unmounted. 
 
-
-
+Further information could be found in the `Bmaptool documentation`_.
 
 General instructions
 --------------------
@@ -60,4 +59,5 @@ Use the ``dd`` utility to write the image to the raw block device. For example:
 
 .. _Poky documentation: http://git.yoctoproject.org/cgit.cgi/poky/tree/README.hardware
 .. _following documentation: https://www.raspberrypi.org/documentation/installation/installing-images/linux.md
+.. _Bmaptool documentation: https://source.tizen.org/documentation/reference/bmaptool
 
