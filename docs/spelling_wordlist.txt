@@ -381,3 +381,6 @@ ds
 hav
 bz
 gz
+psplash
+PSplash
+bootsplash
